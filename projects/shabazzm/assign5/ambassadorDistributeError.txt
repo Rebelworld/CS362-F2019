@@ -1,0 +1,116 @@
+flip3 ~/class362/assign5 4% gdb unittest4
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-110.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /nfs/stak/users/shabazzm/class362/assign5/unittest4...done.
+(gdb) break 85
+Breakpoint 1 at 0x4012b7: file unittest4.c, line 85.
+(gdb) run
+Starting program: /nfs/stak/users/shabazzm/class362/assign5/unittest4
+warning: the debug information found in "/usr/lib/debug//lib64/ld-2.17.so.debug" does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/ld-2.17.so.debug" does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.17.so.debug" does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//ld-2.17.so.debug" does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//lib64/libm-2.17.so.debug" does not match "/lib64/libm.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libm-2.17.so.debug" does not match "/lib64/libm.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libm-2.17.so.debug" does not match "/lib64/libm.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libm-2.17.so.debug" does not match "/lib64/libm.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.17.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libc-2.17.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.17.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libc-2.17.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+TESTING Card Test 4: AMBASSADOR:
+
+PASS: hand count for both players remain unchanged after user attempted to return 3 cards to supply
+
+PASS: Supply count of card player 1 tried to return to pile unchanged after user tried to return invalid number
+
+
+Breakpoint 1, main () at unittest4.c:86
+86          ambassadorEffect(1,2,handPos,&testG,currentPlayer);
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-292.el7.x86_64
+(gdb) p testG.handCount[1]
+$1 = 0
+(gdb) p testG.handCount[0]
+$2 = 5
+(gdb) p testg.discardCount[1]
+No symbol "testg" in current context.
+(gdb) p testG.discardCount[1]
+$3 = 0
+(gdb) p testG.discardCount[0]
+$4 = 0
+(gdb) s
+ambassadorEffect (choice1=1, choice2=2, handPos=0, state=0x7fffffff11e0,
+    currentPlayer=0) at dominion.c:693
+warning: Source file is more recent than executable.
+693         int j = 0;      //used to check if player has enough cards to discard
+(gdb) s
+695             if (choice2 > 2 || choice2 < 0)
+(gdb) s
+700             if (choice1 == handPos)
+(gdb) s
+705             for (int i = 0; i < state->handCount[currentPlayer]; i++)
+(gdb) s
+707                 if (i != handPos && i == state->hand[currentPlayer][choice1] && i != choice1)
+(gdb) s
+705             for (int i = 0; i < state->handCount[currentPlayer]; i++)
+(gdb) s
+707                 if (i != handPos && i == state->hand[currentPlayer][choice1] && i != choice1)
+(gdb) s
+705             for (int i = 0; i < state->handCount[currentPlayer]; i++)
+(gdb) s
+707                 if (i != handPos && i == state->hand[currentPlayer][choice1] && i != choice1)
+(gdb) s
+705             for (int i = 0; i < state->handCount[currentPlayer]; i++)
+(gdb) s
+707                 if (i != handPos && i == state->hand[currentPlayer][choice1] && i != choice1)
+(gdb) s
+705             for (int i = 0; i < state->handCount[currentPlayer]; i++)
+(gdb) s
+707                 if (i != handPos && i == state->hand[currentPlayer][choice1] && i != choice1)
+(gdb) s
+705             for (int i = 0; i < state->handCount[currentPlayer]; i++)
+(gdb) s
+712             if (j < choice2)
+(gdb) s
+714                 return -1;
+(gdb) s
+750     }
+(gdb) s
+main () at unittest4.c:88
+88          testG.supplyCount[curse]=3;
+(gdb) testG.handCount[1]
+Undefined command: "testG".  Try "help".
+(gdb) p testG.handCount[1]
+$5 = 0
+(gdb) p testG.handCount[0]
+$6 = 5
+(gdb) p testG.discardCount[0]
+$7 = 0
+(gdb) p testG.discardCount[1]
+$8 = 0
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 10850] will be killed.
+
+Quit anyway? (y or n) y
+flip3 ~/class362/assign5 5%

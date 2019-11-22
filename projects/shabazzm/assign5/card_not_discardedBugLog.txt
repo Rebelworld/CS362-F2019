@@ -1,0 +1,120 @@
+Logging out put from GDB for baron test
+flip3 ~/class362/assign5 164% gdb unittest3
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-110.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /nfs/stak/users/shabazzm/class362/assign5/unittest3...done.
+(gdb) break 63
+Breakpoint 1 at 0x401158: file unittest3.c, line 63.
+(gdb) run
+Starting program: /nfs/stak/users/shabazzm/class362/assign5/unittest3
+warning: the debug information found in "/usr/lib/debug//lib64/ld-2.17.so.debug"                                             does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/ld-2.17.so.debu                                            g" does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.17.so.deb                                            ug" does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//ld-2.17.so.deb                                            ug" does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//lib64/libm-2.17.so.debug                                            " does not match "/lib64/libm.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libm-2.17.so.de                                            bug" does not match "/lib64/libm.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libm-2.17.so.d                                            ebug" does not match "/lib64/libm.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libm-2.17.so.d                                            ebug" does not match "/lib64/libm.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.17.so.debug                                            " does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libc-2.17.so.de                                            bug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.17.so.d                                            ebug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libc-2.17.so.d                                            ebug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+TESTING Card Test 3: BARON:
+
+Number of buys before playing baron is 1
+
+Breakpoint 1, main () at unittest3.c:63
+63          int choice1=1;
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-292.el7.x86_64
+(gdb) p card_not_discarded
+No symbol "card_not_discarded" in current context.
+(gdb) s
+64          baronEffect(&testG,choice1,currentPlayer);
+(gdb) p choice1
+$1 = 1
+(gdb) s
+baronEffect (state=0x7fffffff11d0, choice1=1, currentPlayer=0) at dominion.c:755
+755         addBuys(state, 1);//Increase buys by 1!
+(gdb) s
+addBuys (state=0x7fffffff11d0, toAdd=1) at dominion.c:689
+689         state->numBuys += toAdd;
+(gdb) s
+690     }
+(gdb) s
+baronEffect (state=0x7fffffff11d0, choice1=1, currentPlayer=0) at dominion.c:757
+757         if (choice1 > 0) { //Boolean true or going to discard an estate
+(gdb) s
+758                int p = 0;//Iterator for hand!
+(gdb) s
+759                int card_not_discarded = 1;//Flag for discard set!
+(gdb) p card_not_discarded
+$2 = -134225584
+(gdb) s
+760                while(card_not_discarded) {
+(gdb) p card_not_discarded
+$3 = 1
+(gdb) s
+761                     if (state->hand[currentPlayer][p] == estate) { //Found an                                             estate card!
+(gdb) s
+762                         state->coins += 4;//Add 4 coins to the amount of coin                                            s
+(gdb) s
+763                         state->discard[currentPlayer][state->discardCount[cur                                            rentPlayer]] = state->hand[currentPlayer][p];
+(gdb) p state->coins
+$4 = 8
+(gdb) s
+764                         state->discardCount[currentPlayer]++;
+(gdb) s
+765                         for (; p < state->handCount[currentPlayer]; p++) {
+(gdb) s
+766                             state->hand[currentPlayer][p] = state->hand[curre                                            ntPlayer][p+1];
+(gdb) s
+765                         for (; p < state->handCount[currentPlayer]; p++) {
+(gdb) p state->coins
+$5 = 8
+(gdb) s
+766                             state->hand[currentPlayer][p] = state->hand[curre                                            ntPlayer][p+1];
+(gdb) s
+765                         for (; p < state->handCount[currentPlayer]; p++) {
+(gdb) s
+766                             state->hand[currentPlayer][p] = state->hand[curre                                            ntPlayer][p+1];
+(gdb) s
+765                         for (; p < state->handCount[currentPlayer]; p++) {
+(gdb) s
+766                             state->hand[currentPlayer][p] = state->hand[curre                                            ntPlayer][p+1];
+(gdb) s
+765                         for (; p < state->handCount[currentPlayer]; p++) {
+(gdb) s
+766                             state->hand[currentPlayer][p] = state->hand[curre                                            ntPlayer][p+1];
+(gdb) s
+765                         for (; p < state->handCount[currentPlayer]; p++) {
+(gdb) s
+768                         state->hand[currentPlayer][state->handCount[currentPl                                            ayer]] = -1;
+(gdb) s
+769                         state->handCount[currentPlayer]--;
+(gdb) s
+760                while(card_not_discarded) {
+(gdb) s
+761                     if (state->hand[currentPlayer][p] == estate) { //Found an                                             estate card!
+(gdb) card_not_discarded
+Undefined command: "card_not_discarded".  Try "help".
+(gdb) p card_not_discarded
+$6 = 1
