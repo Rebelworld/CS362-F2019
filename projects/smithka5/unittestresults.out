@@ -1,0 +1,3847 @@
+TESTING Card Test 1: Mine:
+PASS:Correct Number of buys after mine card played.
+PASS:Card removed from hand
+
+FAIL:gold has not been added in place of silver 
+
+PASS: silver has not been added to discard pile as expected
+
+PASS: -1 returned as expected when choice2 is more than treasure_map
+
+PASS: -1 returned as expected when choice2 <curse 2
+
+FAIL: number of silver has not increased after attempting to add silver
+
+END MINE CARD TEST
+***************************************************************
+TESTING Card Test 2: Minion:
+PASS: number of actions has increased correctly
+
+PASS:coins have increased correctly by 2
+
+FAIL:First player has not received all new cards
+
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+hand count before minionPlay is 5
+PASS:other player has drawn all new cards
+
+END TEST MINION
+******************************************************************************************************
+TESTING Card Test 3: BARON:
+
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+PASS: coins increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 4
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played and estates present in hand
+
+FAIL:#estates in hand not decremented by 1 after choosing to discard estate 
+number of estates in hand before baron card played is 1
+number of estates in hand after baron card played is 3
+
+FAIL: Supply of estates not decremented correctly after user has chosen not to discard an estate
+number of estates in supply before playing baron 8
+number of estates in supply  after playing baron 6
+
+PASS: estate added to discard pile pile from supply
+
+FAIL: supply count for estate is not 0 after what should be final card removed
+supply count for estate now -1
+
+PASS:No additional estates added to discard pile, when estate supply empty
+
+PASS:player has gained estate to discard pile, after attempting to discard estate with none in hand
+
+END OF TEST BARON CARD
+********************************************************************************************************
+TESTING Card Test 4: AMBASSADOR:
+
+PASS: hand count for both players remain unchanged after user attempted to return 3 cards to supply 
+
+PASS: Supply count of card player 1 tried to return to pile unchanged after user tried to return invalid number
+
+FAIL:incorrect number of cards has been added to supply pile after playing Ambassador
+
+FAIL: Card to be returned to supply not given to other player(s)
+END OF TEST AMBASSADOR CARD
+***************************************************************************************************
+TESTING Card Test 5: TRIBUTE:
+
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+FAIL: Action was not incremented for player 1 correctly after playing tribute and 2 action cards revealed
+actions before tribute  1
+ actions after tribute   1
+
+FAIL: Cards added to hand incorrectly after playing tribute and 2 victory cards revealed
+Hand Count player 1 before tribute  5
+ Hand Count  player 1 after tribute   9
+
+PASS: Cards added to hand correctly after playing tribute and 2 victory cards revealed
+Hand count of player 2 before tribute  0
+ Hand count of player 2 after tribute   0
+
+END OF TEST TRIBUTE CARD
+*********************************************************************************************
+TESTING Card Test 1: Baron:
+TEST RUN #1
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #2
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #3
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #4
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #5
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+PASS:#estates in hand decremented by 1 after choosing to discard estate 
+
+TEST RUN #6
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+PASS: #estates in Supply are not changed after baron card is played, & player chooses to discard estate
+
+PASS:#estates in hand decremented by 1 after choosing to discard estate 
+
+TEST RUN #7
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+TEST RUN #8
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+PASS: #estates in Supply are not changed after baron card is played, & player chooses to discard estate
+
+TEST RUN #9
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #10
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #11
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #12
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+TEST RUN #13
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #14
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+TEST RUN #15
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+TEST RUN #16
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #17
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #18
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #19
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+TEST RUN #20
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #21
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+PASS:#estates in hand decremented by 1 after choosing to discard estate 
+
+TEST RUN #22
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 4
+coins after baron 4
+
+PASS: #estates in Supply are not changed after baron card is played, & player chooses to discard estate
+
+TEST RUN #23
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #24
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+PASS:#estates in hand decremented by 1 after choosing to discard estate 
+
+TEST RUN #25
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+PASS: #estates in Supply are not changed after baron card is played, & player chooses to discard estate
+
+PASS:#estates in hand decremented by 1 after choosing to discard estate 
+
+TEST RUN #26
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #27
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #28
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #29
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #30
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+PASS:#estates in hand decremented by 1 after choosing to discard estate 
+
+TEST RUN #31
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #32
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #33
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #34
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #35
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #36
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #37
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+PASS:#estates in hand decremented by 1 after choosing to discard estate 
+
+TEST RUN #38
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+PASS: #estates in Supply are not changed after baron card is played, & player chooses to discard estate
+
+PASS:#estates in hand decremented by 1 after choosing to discard estate 
+
+TEST RUN #39
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #40
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #41
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #42
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+TEST RUN #43
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #44
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #45
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+PASS:#estates in hand decremented by 1 after choosing to discard estate 
+
+TEST RUN #46
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #47
+Player has chosen to discard an estate in exchange for 4 coins
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+FAIL: coins not increased by 4 after baron card played with estate chosen to be trashed
+coins before baron 8
+coins after baron 8
+
+FAIL: #estates in Supply are changed after baron card is played & player chooses to discard estate 
+
+PASS:#estates in hand decremented by 1 after choosing to discard estate 
+
+TEST RUN #48
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #49
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+TEST RUN #50
+Player has chosen to gain an estate
+Number of buys before playing baron is 1
+PASS: number of buys was increased after baron card was played
+number of buys after playing baron 2
+
+Total test passed: 65
+Total test failed: 31
+END TEST BARON
+******************************************************************************************************
+TESTING Card Test 2: Minion:
+TEST  SERIES RUN #1
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #2
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #3
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #4
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 4
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #5
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #6
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #7
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 5
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #8
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 4
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #9
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 5
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #10
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 5
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #11
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 5
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #12
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #13
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #14
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #15
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 5
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #16
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #17
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #18
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 4
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #19
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #20
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #21
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #22
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 5
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #23
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 4
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #24
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #25
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #26
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #27
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 5
+second player has more then 4 cards in hand before minion played
+
+FAIL:Second player has not received new cards
+
+TEST  SERIES RUN #28
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #29
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #30
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #31
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 5
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #32
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #33
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #34
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 4
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #35
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 4
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #36
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #37
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 5
+second player has more then 4 cards in hand before minion played
+
+FAIL:Second player has not received new cards
+
+TEST  SERIES RUN #38
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #39
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #40
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #41
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 2
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #42
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 5
+second player has more then 4 cards in hand before minion played
+
+FAIL:Second player has not received new cards
+
+TEST  SERIES RUN #43
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #44
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 4
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #45
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 4
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #46
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #47
+User has chosen to discard hand and redraw 4
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+FAIL:First player has not received all new cards
+
+Hand count for player two is 5
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #48
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #49
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 4
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+TEST  SERIES RUN #50
+Player has chosen to discard gain 2 coins
+FAIL:number of actions has not increased correctly
+
+Actions before minion played 1
+Actions after  minion played 3
+PASS:coins have increased correctly by 2
+coins before minion played are4
+coins after minion is played are 6
+
+Hand count for player two is 3
+PASS:second player does not have more than 4 cards in their hand before minion is played
+second payer does not have to discard hand and draw 4 new cards
+
+Total test passed: 74
+Total test failed: 76
+END TEST MINION
+******************************************************************************************************
+TESTING Card Test 3: TRIBUTE:
+TEST SERIES RUN #1
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #2
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #3
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #4
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #5
+FAIL: Cards added to hand incorrectly after playing tribute and 2 victory cards revealed
+Hand Count player 1 before tribute  5
+ Hand Count  player 1 after tribute   9
+
+PASS: Cards added to correct hand after playing tribute and 2 victory cards revealed
+Hand count of player 2 before tribute  5
+ Hand count of player 2 after tribute   5
+
+TEST SERIES RUN #6
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #7
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #8
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #9
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #10
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #11
+FAIL: Cards added to hand incorrectly after playing tribute and 2 victory cards revealed
+Hand Count player 1 before tribute  5
+ Hand Count  player 1 after tribute   9
+
+PASS: Cards added to correct hand after playing tribute and 2 victory cards revealed
+Hand count of player 2 before tribute  5
+ Hand count of player 2 after tribute   5
+
+TEST SERIES RUN #12
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #13
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #14
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #15
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #16
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #17
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #18
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #19
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #20
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #21
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #22
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #23
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #24
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #25
+FAIL: Action was not incremented for player 1 correctly after playing tribute and 2 action cards revealed
+actions before tribute  1
+ actions after tribute   1
+
+TEST SERIES RUN #26
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #27
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #28
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #29
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #30
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #31
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #32
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #33
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #34
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #35
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #36
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #37
+FAIL: Action was not incremented for player 1 correctly after playing tribute and 2 action cards revealed
+actions before tribute  1
+ actions after tribute   1
+
+TEST SERIES RUN #38
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #39
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #40
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #41
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #42
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #43
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #44
+FAIL: Action was not incremented for player 1 correctly after playing tribute and 2 action cards revealed
+actions before tribute  1
+ actions after tribute   1
+
+TEST SERIES RUN #45
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #46
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #47
+FAIL: Action was not incremented for player 1 correctly after playing tribute and 2 action cards revealed
+actions before tribute  1
+ actions after tribute   1
+
+TEST SERIES RUN #48
+FAIL: Cards added to hand incorrectly after playing tribute and 2 victory cards revealed
+Hand Count player 1 before tribute  5
+ Hand Count  player 1 after tribute   9
+
+PASS: Cards added to correct hand after playing tribute and 2 victory cards revealed
+Hand count of player 2 before tribute  5
+ Hand count of player 2 after tribute   5
+
+TEST SERIES RUN #49
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #50
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #51
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #52
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #53
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #54
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #55
+FAIL: Action was not incremented for player 1 correctly after playing tribute and 2 action cards revealed
+actions before tribute  1
+ actions after tribute   1
+
+TEST SERIES RUN #56
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #57
+FAIL: Action was not incremented for player 1 correctly after playing tribute and 2 action cards revealed
+actions before tribute  1
+ actions after tribute   1
+
+TEST SERIES RUN #58
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #59
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #60
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #61
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #62
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #63
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #64
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #65
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #66
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #67
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #68
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #69
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #70
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #71
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #72
+FAIL: Action was not incremented for player 1 correctly after playing tribute and 2 action cards revealed
+actions before tribute  1
+ actions after tribute   1
+
+TEST SERIES RUN #73
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #74
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #75
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #76
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #77
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #78
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #79
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #80
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #81
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #82
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #83
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #84
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #85
+FAIL: Action was not incremented for player 1 correctly after playing tribute and 2 action cards revealed
+actions before tribute  1
+ actions after tribute   1
+
+TEST SERIES RUN #86
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #87
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #88
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #89
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #90
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #91
+Insufficient conditions for any test to be triggered 
+TEST SERIES RUN #92
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #93
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #94
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #95
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #96
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #97
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #98
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #99
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+TEST SERIES RUN #100
+PASS: Coins was incremented correctly for player 1 after playing tribute and 2 treasure cards revealed
+coins before tribute  4
+ coins after tribute   6
+
+Total test passed: 70
+Total test failed: 11
+END TEST TRIBUTE
+******************************************************************************************************
+Function 'updateCoins'
+Lines executed:81.82% of 11
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+No calls
+
+Function 'gainCard'
+Lines executed:76.92% of 13
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:100.00% of 1
+
+Function 'discardCard'
+Lines executed:92.31% of 13
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+No calls
+
+Function 'cardEffect'
+Lines executed:0.00% of 149
+Branches executed:0.00% of 119
+Taken at least once:0.00% of 119
+Calls executed:0.00% of 47
+
+Function 'mineEffect'
+Lines executed:93.33% of 15
+Branches executed:100.00% of 14
+Taken at least once:71.43% of 14
+Calls executed:100.00% of 5
+
+Function 'tributeEffect'
+Lines executed:52.94% of 34
+Branches executed:60.00% of 30
+Taken at least once:40.00% of 30
+Calls executed:50.00% of 4
+
+Function 'minionEffect'
+Lines executed:100.00% of 18
+Branches executed:100.00% of 18
+Taken at least once:100.00% of 18
+Calls executed:100.00% of 7
+
+Function 'baronEffect'
+Lines executed:92.59% of 27
+Branches executed:100.00% of 18
+Taken at least once:83.33% of 18
+Calls executed:77.78% of 9
+
+Function 'ambassadorEffect'
+Lines executed:40.91% of 22
+Branches executed:53.85% of 26
+Taken at least once:38.46% of 26
+Calls executed:0.00% of 3
+
+Function 'addBuys'
+Lines executed:100.00% of 3
+No branches
+No calls
+
+Function 'addActions'
+Lines executed:100.00% of 3
+No branches
+No calls
+
+Function 'getCost'
+Lines executed:16.67% of 30
+Branches executed:100.00% of 28
+Taken at least once:10.71% of 28
+No calls
+
+Function 'drawCard'
+Lines executed:77.27% of 22
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:100.00% of 1
+
+Function 'getWinners'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+Calls executed:0.00% of 2
+
+Function 'scoreFor'
+Lines executed:0.00% of 42
+Branches executed:0.00% of 42
+Taken at least once:0.00% of 42
+Calls executed:0.00% of 3
+
+Function 'isGameOver'
+Lines executed:0.00% of 10
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'endTurn'
+Lines executed:0.00% of 20
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 3
+
+Function 'whoseTurn'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 9
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'supplyCount'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:0.00% of 3
+No branches
+Calls executed:0.00% of 1
+
+Function 'numHandCards'
+Lines executed:100.00% of 2
+No branches
+Calls executed:100.00% of 1
+
+Function 'buyCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 4
+
+Function 'playCard'
+Lines executed:0.00% of 14
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 3
+
+Function 'shuffle'
+Lines executed:100.00% of 16
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+Calls executed:100.00% of 2
+
+Function 'initializeGame'
+Lines executed:95.16% of 62
+Branches executed:100.00% of 46
+Taken at least once:91.30% of 46
+Calls executed:100.00% of 5
+
+Function 'kingdomCards'
+Lines executed:0.00% of 13
+No branches
+No calls
+
+Function 'newGame'
+Lines executed:0.00% of 3
+No branches
+No calls
+
+Function 'compare'
+Lines executed:83.33% of 6
+Branches executed:100.00% of 4
+Taken at least once:75.00% of 4
+No calls
+
+File 'dominion.c'
+Lines executed:38.10% of 601
+Branches executed:43.79% of 443
+Taken at least once:31.38% of 443
+Calls executed:30.69% of 101
+Creating 'dominion.c.gcov'
+
+        -:    0:Source:dominion.c
+        -:    0:Graph:dominion.gcno
+        -:    0:Data:dominion.gcda
+        -:    0:Runs:8
+        -:    0:Programs:8
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <math.h>
+        -:    6:#include <stdlib.h>
+        -:    7:
+function compare called 9255 returned 100% blocks executed 83%
+     9255:    8:int compare(const void* a, const void* b) {
+     9255:    9:    if (*(int*)a > *(int*)b)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   10:        return 1;
+     9255:   11:    if (*(int*)a < *(int*)b)
+branch  0 taken 27% (fallthrough)
+branch  1 taken 73%
+     2468:   12:        return -1;
+     6787:   13:    return 0;
+        -:   14:}
+        -:   15:
+function newGame called 0 returned 0% blocks executed 0%
+    #####:   16:struct gameState* newGame() {
+    #####:   17:    struct gameState* g = malloc(sizeof(struct gameState));
+    #####:   18:    return g;
+        -:   19:}
+        -:   20:
+function kingdomCards called 0 returned 0% blocks executed 0%
+    #####:   21:int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
+        -:   22:                  int k8, int k9, int k10) {
+    #####:   23:    int* k = malloc(10 * sizeof(int));
+    #####:   24:    k[0] = k1;
+    #####:   25:    k[1] = k2;
+    #####:   26:    k[2] = k3;
+    #####:   27:    k[3] = k4;
+    #####:   28:    k[4] = k5;
+    #####:   29:    k[5] = k6;
+    #####:   30:    k[6] = k7;
+    #####:   31:    k[7] = k8;
+    #####:   32:    k[8] = k9;
+    #####:   33:    k[9] = k10;
+    #####:   34:    return k;
+        -:   35:}
+        -:   36:
+function initializeGame called 206 returned 100% blocks executed 95%
+      206:   37:int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+        -:   38:                   struct gameState *state) {
+        -:   39:    int i;
+        -:   40:    int j;
+        -:   41:    int it;
+        -:   42:
+        -:   43:    //set up random number generator
+      206:   44:    SelectStream(1);
+call    0 returned 100%
+      206:   45:    PutSeed((long)randomSeed);
+call    0 returned 100%
+        -:   46:
+        -:   47:    //check number of players
+      206:   48:    if (numPlayers > MAX_PLAYERS || numPlayers < 2)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+        -:   49:    {
+    #####:   50:        return -1;
+        -:   51:    }
+        -:   52:
+        -:   53:    //set number of players
+      206:   54:    state->numPlayers = numPlayers;
+        -:   55:
+        -:   56:    //check selected kingdom cards are different
+     2266:   57:    for (i = 0; i < 10; i++)
+branch  0 taken 91%
+branch  1 taken 9% (fallthrough)
+        -:   58:    {
+    22660:   59:        for (j = 0; j < 10; j++)
+branch  0 taken 91%
+branch  1 taken 9% (fallthrough)
+        -:   60:        {
+    20600:   61:            if (j != i && kingdomCards[j] == kingdomCards[i])
+branch  0 taken 90% (fallthrough)
+branch  1 taken 10%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+        -:   62:            {
+    #####:   63:                return -1;
+        -:   64:            }
+        -:   65:        }
+        -:   66:    }
+        -:   67:
+        -:   68:
+        -:   69:    //initialize supply
+        -:   70:    ///////////////////////////////
+        -:   71:
+        -:   72:    //set number of Curse cards
+      206:   73:    if (numPlayers == 2)
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+        -:   74:    {
+       67:   75:        state->supplyCount[curse] = 10;
+        -:   76:    }
+      139:   77:    else if (numPlayers == 3)
+branch  0 taken 53% (fallthrough)
+branch  1 taken 47%
+        -:   78:    {
+       73:   79:        state->supplyCount[curse] = 20;
+        -:   80:    }
+        -:   81:    else
+        -:   82:    {
+       66:   83:        state->supplyCount[curse] = 30;
+        -:   84:    }
+        -:   85:
+        -:   86:    //set number of Victory cards
+      206:   87:    if (numPlayers == 2)
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+        -:   88:    {
+       67:   89:        state->supplyCount[estate] = 8;
+       67:   90:        state->supplyCount[duchy] = 8;
+       67:   91:        state->supplyCount[province] = 8;
+        -:   92:    }
+        -:   93:    else
+        -:   94:    {
+      139:   95:        state->supplyCount[estate] = 12;
+      139:   96:        state->supplyCount[duchy] = 12;
+      139:   97:        state->supplyCount[province] = 12;
+        -:   98:    }
+        -:   99:
+        -:  100:    //set number of Treasure cards
+      206:  101:    state->supplyCount[copper] = 60 - (7 * numPlayers);
+      206:  102:    state->supplyCount[silver] = 40;
+      206:  103:    state->supplyCount[gold] = 30;
+        -:  104:
+        -:  105:    //set number of Kingdom cards
+     4326:  106:    for (i = adventurer; i <= treasure_map; i++)        //loop all cards
+branch  0 taken 95%
+branch  1 taken 5% (fallthrough)
+        -:  107:    {
+    33990:  108:        for (j = 0; j < 10; j++)                //loop chosen cards
+branch  0 taken 94%
+branch  1 taken 6% (fallthrough)
+        -:  109:        {
+    31930:  110:            if (kingdomCards[j] == i)
+branch  0 taken 6% (fallthrough)
+branch  1 taken 94%
+        -:  111:            {
+        -:  112:                //check if card is a 'Victory' Kingdom card
+     2060:  113:                if (kingdomCards[j] == great_hall || kingdomCards[j] == gardens)
+branch  0 taken 99% (fallthrough)
+branch  1 taken 1%
+branch  2 taken 10% (fallthrough)
+branch  3 taken 90%
+        -:  114:                {
+      414:  115:                    if (numPlayers == 2) {
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+       68:  116:                        state->supplyCount[i] = 8;
+        -:  117:                    }
+        -:  118:                    else {
+      139:  119:                        state->supplyCount[i] = 12;
+        -:  120:                    }
+        -:  121:                }
+        -:  122:                else
+        -:  123:                {
+     1853:  124:                    state->supplyCount[i] = 10;
+        -:  125:                }
+     2060:  126:                break;
+        -:  127:            }
+        -:  128:            else    //card is not in the set choosen for the game
+        -:  129:            {
+    29870:  130:                state->supplyCount[i] = -1;
+        -:  131:            }
+        -:  132:        }
+        -:  133:
+        -:  134:    }
+        -:  135:
+        -:  136:    ////////////////////////
+        -:  137:    //supply intilization complete
+        -:  138:
+        -:  139:    //set player decks
+      823:  140:    for (i = 0; i < numPlayers; i++)
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+        -:  141:    {
+      617:  142:        state->deckCount[i] = 0;
+     2468:  143:        for (j = 0; j < 3; j++)
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+        -:  144:        {
+     1851:  145:            state->deck[i][j] = estate;
+     1851:  146:            state->deckCount[i]++;
+        -:  147:        }
+     4936:  148:        for (j = 3; j < 10; j++)
+branch  0 taken 88%
+branch  1 taken 13% (fallthrough)
+        -:  149:        {
+     4319:  150:            state->deck[i][j] = copper;
+     4319:  151:            state->deckCount[i]++;
+        -:  152:        }
+        -:  153:    }
+        -:  154:
+        -:  155:    //shuffle player decks
+      823:  156:    for (i = 0; i < numPlayers; i++)
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+        -:  157:    {
+      617:  158:        if ( shuffle(i, state) < 0 )
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+        -:  159:        {
+    #####:  160:            return -1;
+        -:  161:        }
+        -:  162:    }
+        -:  163:
+        -:  164:    //draw player hands
+      823:  165:    for (i = 0; i < numPlayers; i++)
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+        -:  166:    {
+        -:  167:        //initialize hand size to zero
+      617:  168:        state->handCount[i] = 0;
+      617:  169:        state->discardCount[i] = 0;
+        -:  170:        //draw 5 cards
+        -:  171:        // for (j = 0; j < 5; j++)
+        -:  172:        //  {
+        -:  173:        //    drawCard(i, state);
+        -:  174:        //  }
+        -:  175:    }
+        -:  176:
+        -:  177:    //set embargo tokens to 0 for all supply piles
+     5768:  178:    for (i = 0; i <= treasure_map; i++)
+branch  0 taken 96%
+branch  1 taken 4% (fallthrough)
+        -:  179:    {
+     5562:  180:        state->embargoTokens[i] = 0;
+        -:  181:    }
+        -:  182:
+        -:  183:    //initialize first player's turn
+      206:  184:    state->outpostPlayed = 0;
+      206:  185:    state->phase = 0;
+      206:  186:    state->numActions = 1;
+      206:  187:    state->numBuys = 1;
+      206:  188:    state->playedCardCount = 0;
+      206:  189:    state->whoseTurn = 0;
+      206:  190:    state->handCount[state->whoseTurn] = 0;
+        -:  191:    //int it; move to top
+        -:  192:
+        -:  193:    //Moved draw cards to here, only drawing at the start of a turn
+     1236:  194:    for (it = 0; it < 5; it++) {
+branch  0 taken 83%
+branch  1 taken 17% (fallthrough)
+     1030:  195:        drawCard(state->whoseTurn, state);
+call    0 returned 100%
+        -:  196:    }
+        -:  197:
+      206:  198:    updateCoins(state->whoseTurn, state, 0);
+call    0 returned 100%
+        -:  199:
+      206:  200:    return 0;
+        -:  201:}
+        -:  202:
+function shuffle called 686 returned 100% blocks executed 100%
+      686:  203:int shuffle(int player, struct gameState *state) {
+        -:  204:
+        -:  205:
+        -:  206:    int newDeck[MAX_DECK];
+      686:  207:    int newDeckPos = 0;
+        -:  208:    int card;
+        -:  209:    int i;
+        -:  210:
+      686:  211:    if (state->deckCount[player] < 1)
+branch  0 taken 10% (fallthrough)
+branch  1 taken 90%
+       69:  212:        return -1;
+      617:  213:    qsort ((void*)(state->deck[player]), state->deckCount[player], sizeof(int), compare);
+call    0 returned 100%
+        -:  214:    /* SORT CARDS IN DECK TO ENSURE DETERMINISM! */
+        -:  215:
+     7404:  216:    while (state->deckCount[player] > 0) {
+branch  0 taken 91%
+branch  1 taken 9% (fallthrough)
+     6170:  217:        card = floor(Random() * state->deckCount[player]);
+call    0 returned 100%
+     6170:  218:        newDeck[newDeckPos] = state->deck[player][card];
+     6170:  219:        newDeckPos++;
+    21529:  220:        for (i = card; i < state->deckCount[player]-1; i++) {
+branch  0 taken 71%
+branch  1 taken 29% (fallthrough)
+    15359:  221:            state->deck[player][i] = state->deck[player][i+1];
+        -:  222:        }
+     6170:  223:        state->deckCount[player]--;
+        -:  224:    }
+     6787:  225:    for (i = 0; i < newDeckPos; i++) {
+branch  0 taken 91%
+branch  1 taken 9% (fallthrough)
+     6170:  226:        state->deck[player][i] = newDeck[i];
+     6170:  227:        state->deckCount[player]++;
+        -:  228:    }
+        -:  229:
+      617:  230:    return 0;
+        -:  231:}
+        -:  232:
+function playCard called 0 returned 0% blocks executed 0%
+    #####:  233:int playCard(int handPos, int choice1, int choice2, int choice3, struct gameState *state)
+        -:  234:{
+        -:  235:    int card;
+    #####:  236:    int coin_bonus = 0;         //tracks coins gain from actions
+        -:  237:
+        -:  238:    //check if it is the right phase
+    #####:  239:    if (state->phase != 0)
+branch  0 never executed
+branch  1 never executed
+        -:  240:    {
+    #####:  241:        return -1;
+        -:  242:    }
+        -:  243:
+        -:  244:    //check if player has enough actions
+    #####:  245:    if ( state->numActions < 1 )
+branch  0 never executed
+branch  1 never executed
+        -:  246:    {
+    #####:  247:        return -1;
+        -:  248:    }
+        -:  249:
+        -:  250:    //get card played
+    #####:  251:    card = handCard(handPos, state);
+call    0 never executed
+        -:  252:
+        -:  253:    //check if selected card is an action
+    #####:  254:    if ( card < adventurer || card > treasure_map )
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  255:    {
+    #####:  256:        return -1;
+        -:  257:    }
+        -:  258:
+        -:  259:    //play card
+    #####:  260:    if ( cardEffect(card, choice1, choice2, choice3, state, handPos, &coin_bonus) < 0 )
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  261:    {
+    #####:  262:        return -1;
+        -:  263:    }
+        -:  264:
+        -:  265:    //reduce number of actions
+    #####:  266:    state->numActions--;
+        -:  267:
+        -:  268:    //update coins (Treasure cards may be added with card draws)
+    #####:  269:    updateCoins(state->whoseTurn, state, coin_bonus);
+call    0 never executed
+        -:  270:
+    #####:  271:    return 0;
+        -:  272:}
+        -:  273:
+function buyCard called 0 returned 0% blocks executed 0%
+    #####:  274:int buyCard(int supplyPos, struct gameState *state) {
+        -:  275:    int who;
+        -:  276:    if (DEBUG) {
+        -:  277:        printf("Entering buyCard...\n");
+        -:  278:    }
+        -:  279:
+        -:  280:    // I don't know what to do about the phase thing.
+        -:  281:
+    #####:  282:    who = state->whoseTurn;
+        -:  283:
+    #####:  284:    if (state->numBuys < 1) {
+branch  0 never executed
+branch  1 never executed
+        -:  285:        if (DEBUG)
+        -:  286:            printf("You do not have any buys left\n");
+    #####:  287:        return -1;
+    #####:  288:    } else if (supplyCount(supplyPos, state) <1) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  289:        if (DEBUG)
+        -:  290:            printf("There are not any of that type of card left\n");
+    #####:  291:        return -1;
+    #####:  292:    } else if (state->coins < getCost(supplyPos)) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  293:        if (DEBUG)
+        -:  294:            printf("You do not have enough money to buy that. You have %d coins.\n", state->coins);
+    #####:  295:        return -1;
+        -:  296:    } else {
+    #####:  297:        state->phase=1;
+        -:  298:        //state->supplyCount[supplyPos]--;
+    #####:  299:        gainCard(supplyPos, state, 0, who); //card goes in discard, this might be wrong.. (2 means goes into hand, 0 goes into discard)
+call    0 never executed
+        -:  300:
+    #####:  301:        state->coins = (state->coins) - (getCost(supplyPos));
+call    0 never executed
+    #####:  302:        state->numBuys--;
+        -:  303:        if (DEBUG)
+        -:  304:            printf("You bought card number %d for %d coins. You now have %d buys and %d coins.\n", supplyPos, getCost(supplyPos), state->numBuys, state->coins);
+        -:  305:    }
+        -:  306:
+        -:  307:    //state->discard[who][state->discardCount[who]] = supplyPos;
+        -:  308:    //state->discardCount[who]++;
+        -:  309:
+    #####:  310:    return 0;
+        -:  311:}
+        -:  312:
+function numHandCards called 567 returned 100% blocks executed 100%
+      567:  313:int numHandCards(struct gameState *state) {
+      567:  314:    return state->handCount[ whoseTurn(state) ];
+call    0 returned 100%
+        -:  315:}
+        -:  316:
+function handCard called 0 returned 0% blocks executed 0%
+    #####:  317:int handCard(int handPos, struct gameState *state) {
+    #####:  318:    int currentPlayer = whoseTurn(state);
+call    0 never executed
+    #####:  319:    return state->hand[currentPlayer][handPos];
+        -:  320:}
+        -:  321:
+function supplyCount called 164 returned 100% blocks executed 100%
+      164:  322:int supplyCount(int card, struct gameState *state) {
+      164:  323:    return state->supplyCount[card];
+        -:  324:}
+        -:  325:
+function fullDeckCount called 0 returned 0% blocks executed 0%
+    #####:  326:int fullDeckCount(int player, int card, struct gameState *state) {
+        -:  327:    int i;
+    #####:  328:    int count = 0;
+        -:  329:
+    #####:  330:    for (i = 0; i < state->deckCount[player]; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  331:    {
+    #####:  332:        if (state->deck[player][i] == card) count++;
+branch  0 never executed
+branch  1 never executed
+        -:  333:    }
+        -:  334:
+    #####:  335:    for (i = 0; i < state->handCount[player]; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  336:    {
+    #####:  337:        if (state->hand[player][i] == card) count++;
+branch  0 never executed
+branch  1 never executed
+        -:  338:    }
+        -:  339:
+    #####:  340:    for (i = 0; i < state->discardCount[player]; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  341:    {
+    #####:  342:        if (state->discard[player][i] == card) count++;
+branch  0 never executed
+branch  1 never executed
+        -:  343:    }
+        -:  344:
+    #####:  345:    return count;
+        -:  346:}
+        -:  347:
+function whoseTurn called 776 returned 100% blocks executed 100%
+      776:  348:int whoseTurn(struct gameState *state) {
+      776:  349:    return state->whoseTurn;
+        -:  350:}
+        -:  351:
+function endTurn called 0 returned 0% blocks executed 0%
+    #####:  352:int endTurn(struct gameState *state) {
+        -:  353:    int k;
+        -:  354:    int i;
+    #####:  355:    int currentPlayer = whoseTurn(state);
+call    0 never executed
+        -:  356:
+        -:  357:    //Discard hand
+    #####:  358:    for (i = 0; i < state->handCount[currentPlayer]; i++) {
+branch  0 never executed
+branch  1 never executed
+    #####:  359:        state->discard[currentPlayer][state->discardCount[currentPlayer]++] = state->hand[currentPlayer][i];//Discard
+    #####:  360:        state->hand[currentPlayer][i] = -1;//Set card to -1
+        -:  361:    }
+    #####:  362:    state->handCount[currentPlayer] = 0;//Reset hand count
+        -:  363:
+        -:  364:    //Code for determining the player
+    #####:  365:    if (currentPlayer < (state->numPlayers - 1)) {
+branch  0 never executed
+branch  1 never executed
+    #####:  366:        state->whoseTurn = currentPlayer + 1;//Still safe to increment
+        -:  367:    }
+        -:  368:    else {
+    #####:  369:        state->whoseTurn = 0;//Max player has been reached, loop back around to player 1
+        -:  370:    }
+        -:  371:
+    #####:  372:    state->outpostPlayed = 0;
+    #####:  373:    state->phase = 0;
+    #####:  374:    state->numActions = 1;
+    #####:  375:    state->coins = 0;
+    #####:  376:    state->numBuys = 1;
+    #####:  377:    state->playedCardCount = 0;
+    #####:  378:    state->handCount[state->whoseTurn] = 0;
+        -:  379:
+        -:  380:    //int k; move to top
+        -:  381:    //Next player draws hand
+    #####:  382:    for (k = 0; k < 5; k++) {
+branch  0 never executed
+branch  1 never executed
+    #####:  383:        drawCard(state->whoseTurn, state);//Draw a card
+call    0 never executed
+        -:  384:    }
+        -:  385:
+        -:  386:    //Update money
+    #####:  387:    updateCoins(state->whoseTurn, state, 0);
+call    0 never executed
+        -:  388:
+    #####:  389:    return 0;
+        -:  390:}
+        -:  391:
+function isGameOver called 0 returned 0% blocks executed 0%
+    #####:  392:int isGameOver(struct gameState *state) {
+        -:  393:    int i;
+        -:  394:    int j;
+        -:  395:
+        -:  396:    //if stack of Province cards is empty, the game ends
+    #####:  397:    if (state->supplyCount[province] == 0)
+branch  0 never executed
+branch  1 never executed
+        -:  398:    {
+    #####:  399:        return 1;
+        -:  400:    }
+        -:  401:
+        -:  402:    //if three supply pile are at 0, the game ends
+    #####:  403:    j = 0;
+    #####:  404:    for (i = 0; i < 25; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  405:    {
+    #####:  406:        if (state->supplyCount[i] == 0)
+branch  0 never executed
+branch  1 never executed
+        -:  407:        {
+    #####:  408:            j++;
+        -:  409:        }
+        -:  410:    }
+    #####:  411:    if ( j >= 3)
+branch  0 never executed
+branch  1 never executed
+        -:  412:    {
+    #####:  413:        return 1;
+        -:  414:    }
+        -:  415:
+    #####:  416:    return 0;
+        -:  417:}
+        -:  418:
+function scoreFor called 0 returned 0% blocks executed 0%
+    #####:  419:int scoreFor (int player, struct gameState *state) {
+        -:  420:
+        -:  421:    int i;
+    #####:  422:    int score = 0;
+        -:  423:    //score from hand
+    #####:  424:    for (i = 0; i < state->handCount[player]; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  425:    {
+    #####:  426:        if (state->hand[player][i] == curse) {
+branch  0 never executed
+branch  1 never executed
+    #####:  427:            score = score - 1;
+        -:  428:        };
+    #####:  429:        if (state->hand[player][i] == estate) {
+branch  0 never executed
+branch  1 never executed
+    #####:  430:            score = score + 1;
+        -:  431:        };
+    #####:  432:        if (state->hand[player][i] == duchy) {
+branch  0 never executed
+branch  1 never executed
+    #####:  433:            score = score + 3;
+        -:  434:        };
+    #####:  435:        if (state->hand[player][i] == province) {
+branch  0 never executed
+branch  1 never executed
+    #####:  436:            score = score + 6;
+        -:  437:        };
+    #####:  438:        if (state->hand[player][i] == great_hall) {
+branch  0 never executed
+branch  1 never executed
+    #####:  439:            score = score + 1;
+        -:  440:        };
+    #####:  441:        if (state->hand[player][i] == gardens) {
+branch  0 never executed
+branch  1 never executed
+    #####:  442:            score = score + ( fullDeckCount(player, 0, state) / 10 );
+call    0 never executed
+        -:  443:        };
+        -:  444:    }
+        -:  445:
+        -:  446:    //score from discard
+    #####:  447:    for (i = 0; i < state->discardCount[player]; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  448:    {
+    #####:  449:        if (state->discard[player][i] == curse) {
+branch  0 never executed
+branch  1 never executed
+    #####:  450:            score = score - 1;
+        -:  451:        };
+    #####:  452:        if (state->discard[player][i] == estate) {
+branch  0 never executed
+branch  1 never executed
+    #####:  453:            score = score + 1;
+        -:  454:        };
+    #####:  455:        if (state->discard[player][i] == duchy) {
+branch  0 never executed
+branch  1 never executed
+    #####:  456:            score = score + 3;
+        -:  457:        };
+    #####:  458:        if (state->discard[player][i] == province) {
+branch  0 never executed
+branch  1 never executed
+    #####:  459:            score = score + 6;
+        -:  460:        };
+    #####:  461:        if (state->discard[player][i] == great_hall) {
+branch  0 never executed
+branch  1 never executed
+    #####:  462:            score = score + 1;
+        -:  463:        };
+    #####:  464:        if (state->discard[player][i] == gardens) {
+branch  0 never executed
+branch  1 never executed
+    #####:  465:            score = score + ( fullDeckCount(player, 0, state) / 10 );
+call    0 never executed
+        -:  466:        };
+        -:  467:    }
+        -:  468:
+        -:  469:    //score from deck
+    #####:  470:    for (i = 0; i < state->discardCount[player]; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  471:    {
+    #####:  472:        if (state->deck[player][i] == curse) {
+branch  0 never executed
+branch  1 never executed
+    #####:  473:            score = score - 1;
+        -:  474:        };
+    #####:  475:        if (state->deck[player][i] == estate) {
+branch  0 never executed
+branch  1 never executed
+    #####:  476:            score = score + 1;
+        -:  477:        };
+    #####:  478:        if (state->deck[player][i] == duchy) {
+branch  0 never executed
+branch  1 never executed
+    #####:  479:            score = score + 3;
+        -:  480:        };
+    #####:  481:        if (state->deck[player][i] == province) {
+branch  0 never executed
+branch  1 never executed
+    #####:  482:            score = score + 6;
+        -:  483:        };
+    #####:  484:        if (state->deck[player][i] == great_hall) {
+branch  0 never executed
+branch  1 never executed
+    #####:  485:            score = score + 1;
+        -:  486:        };
+    #####:  487:        if (state->deck[player][i] == gardens) {
+branch  0 never executed
+branch  1 never executed
+    #####:  488:            score = score + ( fullDeckCount(player, 0, state) / 10 );
+call    0 never executed
+        -:  489:        };
+        -:  490:    }
+        -:  491:
+    #####:  492:    return score;
+        -:  493:}
+        -:  494:
+function getWinners called 0 returned 0% blocks executed 0%
+    #####:  495:int getWinners(int players[MAX_PLAYERS], struct gameState *state) {
+        -:  496:    int i;
+        -:  497:    int j;
+        -:  498:    int highScore;
+        -:  499:    int currentPlayer;
+        -:  500:
+        -:  501:    //get score for each player
+    #####:  502:    for (i = 0; i < MAX_PLAYERS; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  503:    {
+        -:  504:        //set unused player scores to -9999
+    #####:  505:        if (i >= state->numPlayers)
+branch  0 never executed
+branch  1 never executed
+        -:  506:        {
+    #####:  507:            players[i] = -9999;
+        -:  508:        }
+        -:  509:        else
+        -:  510:        {
+    #####:  511:            players[i] = scoreFor (i, state);
+call    0 never executed
+        -:  512:        }
+        -:  513:    }
+        -:  514:
+        -:  515:    //find highest score
+    #####:  516:    j = 0;
+    #####:  517:    for (i = 0; i < MAX_PLAYERS; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  518:    {
+    #####:  519:        if (players[i] > players[j])
+branch  0 never executed
+branch  1 never executed
+        -:  520:        {
+    #####:  521:            j = i;
+        -:  522:        }
+        -:  523:    }
+    #####:  524:    highScore = players[j];
+        -:  525:
+        -:  526:    //add 1 to players who had less turns
+    #####:  527:    currentPlayer = whoseTurn(state);
+call    0 never executed
+    #####:  528:    for (i = 0; i < MAX_PLAYERS; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  529:    {
+    #####:  530:        if ( players[i] == highScore && i > currentPlayer )
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  531:        {
+    #####:  532:            players[i]++;
+        -:  533:        }
+        -:  534:    }
+        -:  535:
+        -:  536:    //find new highest score
+    #####:  537:    j = 0;
+    #####:  538:    for (i = 0; i < MAX_PLAYERS; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  539:    {
+    #####:  540:        if ( players[i] > players[j] )
+branch  0 never executed
+branch  1 never executed
+        -:  541:        {
+    #####:  542:            j = i;
+        -:  543:        }
+        -:  544:    }
+    #####:  545:    highScore = players[j];
+        -:  546:
+        -:  547:    //set winners in array to 1 and rest to 0
+    #####:  548:    for (i = 0; i < MAX_PLAYERS; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  549:    {
+    #####:  550:        if ( players[i] == highScore )
+branch  0 never executed
+branch  1 never executed
+        -:  551:        {
+    #####:  552:            players[i] = 1;
+        -:  553:        }
+        -:  554:        else
+        -:  555:        {
+    #####:  556:            players[i] = 0;
+        -:  557:        }
+        -:  558:    }
+        -:  559:
+    #####:  560:    return 0;
+        -:  561:}
+        -:  562:
+function drawCard called 1867 returned 100% blocks executed 85%
+     1867:  563:int drawCard(int player, struct gameState *state)
+        -:  564:{   int count;
+        -:  565:    int deckCounter;
+     1867:  566:    if (state->deckCount[player] <= 0) { //Deck is empty
+branch  0 taken 4% (fallthrough)
+branch  1 taken 96%
+        -:  567:
+        -:  568:        //Step 1 Shuffle the discard pile back into a deck
+        -:  569:        int i;
+        -:  570:        //Move discard to deck
+       69:  571:        for (i = 0; i < state->discardCount[player]; i++) {
+branch  0 taken 0%
+branch  1 taken 100% (fallthrough)
+    #####:  572:            state->deck[player][i] = state->discard[player][i];
+    #####:  573:            state->discard[player][i] = -1;
+        -:  574:        }
+        -:  575:
+       69:  576:        state->deckCount[player] = state->discardCount[player];
+       69:  577:        state->discardCount[player] = 0;//Reset discard
+        -:  578:
+        -:  579:        //Shufffle the deck
+       69:  580:        shuffle(player, state);//Shuffle the deck up and make it so that we can draw
+call    0 returned 100%
+        -:  581:
+        -:  582:        if (DEBUG) { //Debug statements
+        -:  583:            printf("Deck count now: %d\n", state->deckCount[player]);
+        -:  584:        }
+        -:  585:
+       69:  586:        state->discardCount[player] = 0;
+        -:  587:
+        -:  588:        //Step 2 Draw Card
+       69:  589:        count = state->handCount[player];//Get current player's hand count
+        -:  590:
+        -:  591:        if (DEBUG) { //Debug statements
+        -:  592:            printf("Current hand count: %d\n", count);
+        -:  593:        }
+        -:  594:
+       69:  595:        deckCounter = state->deckCount[player];//Create a holder for the deck count
+        -:  596:
+       69:  597:        if (deckCounter == 0)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+       69:  598:            return -1;
+        -:  599:
+    #####:  600:        state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to hand
+    #####:  601:        state->deckCount[player]--;
+    #####:  602:        state->handCount[player]++;//Increment hand count
+        -:  603:    }
+        -:  604:
+        -:  605:    else {
+     1798:  606:        int count = state->handCount[player];//Get current hand count for player
+        -:  607:        int deckCounter;
+        -:  608:        if (DEBUG) { //Debug statements
+        -:  609:            printf("Current hand count: %d\n", count);
+        -:  610:        }
+        -:  611:
+     1798:  612:        deckCounter = state->deckCount[player];//Create holder for the deck count
+     1798:  613:        state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+     1798:  614:        state->deckCount[player]--;
+     1798:  615:        state->handCount[player]++;//Increment hand count
+        -:  616:    }
+        -:  617:
+     1798:  618:    return 0;
+        -:  619:}
+        -:  620:
+function getCost called 4 returned 100% blocks executed 17%
+        4:  621:int getCost(int cardNumber)
+        -:  622:{
+        4:  623:    switch( cardNumber )
+branch  0 taken 25%
+branch  1 taken 0%
+branch  2 taken 0%
+branch  3 taken 25%
+branch  4 taken 50%
+branch  5 taken 0%
+branch  6 taken 0%
+branch  7 taken 0%
+branch  8 taken 0%
+branch  9 taken 0%
+branch 10 taken 0%
+branch 11 taken 0%
+branch 12 taken 0%
+branch 13 taken 0%
+branch 14 taken 0%
+branch 15 taken 0%
+branch 16 taken 0%
+branch 17 taken 0%
+branch 18 taken 0%
+branch 19 taken 0%
+branch 20 taken 0%
+branch 21 taken 0%
+branch 22 taken 0%
+branch 23 taken 0%
+branch 24 taken 0%
+branch 25 taken 0%
+branch 26 taken 0%
+branch 27 taken 0%
+        -:  624:    {
+        -:  625:    case curse:
+        1:  626:        return 0;
+        -:  627:    case estate:
+    #####:  628:        return 2;
+        -:  629:    case duchy:
+    #####:  630:        return 5;
+        -:  631:    case province:
+        1:  632:        return 8;
+        -:  633:    case copper:
+        2:  634:        return 0;
+        -:  635:    case silver:
+    #####:  636:        return 3;
+        -:  637:    case gold:
+    #####:  638:        return 6;
+        -:  639:    case adventurer:
+    #####:  640:        return 6;
+        -:  641:    case council_room:
+    #####:  642:        return 5;
+        -:  643:    case feast:
+    #####:  644:        return 4;
+        -:  645:    case gardens:
+    #####:  646:        return 4;
+        -:  647:    case mine:
+    #####:  648:        return 5;
+        -:  649:    case remodel:
+    #####:  650:        return 4;
+        -:  651:    case smithy:
+    #####:  652:        return 4;
+        -:  653:    case village:
+    #####:  654:        return 3;
+        -:  655:    case baron:
+    #####:  656:        return 4;
+        -:  657:    case great_hall:
+    #####:  658:        return 3;
+        -:  659:    case minion:
+    #####:  660:        return 5;
+        -:  661:    case steward:
+    #####:  662:        return 3;
+        -:  663:    case tribute:
+    #####:  664:        return 5;
+        -:  665:    case ambassador:
+    #####:  666:        return 3;
+        -:  667:    case cutpurse:
+    #####:  668:        return 4;
+        -:  669:    case embargo:
+    #####:  670:        return 2;
+        -:  671:    case outpost:
+    #####:  672:        return 5;
+        -:  673:    case salvager:
+    #####:  674:        return 4;
+        -:  675:    case sea_hag:
+    #####:  676:        return 4;
+        -:  677:    case treasure_map:
+    #####:  678:        return 4;
+        -:  679:    }
+        -:  680:
+    #####:  681:    return -1;
+        -:  682:}
+        -:  683:
+function addActions called 255 returned 100% blocks executed 100%
+      255:  684:void addActions(struct gameState * state, int toAdd) {
+      255:  685:    state->numActions += toAdd;
+      255:  686:}
+        -:  687:
+function addBuys called 55 returned 100% blocks executed 100%
+       55:  688:void addBuys(struct gameState * state, int toAdd) {
+       55:  689:    state->numBuys += toAdd;
+       55:  690:}
+        -:  691://the amabassadorEffect function performs the actions of the Ambassador card
+function ambassadorEffect called 3 returned 100% blocks executed 39%
+        3:  692:int ambassadorEffect(int choice1, int choice2, int handPos, struct gameState* state, int currentPlayer) {
+        3:  693:    int j = 0;      //used to check if player has enough cards to discard
+        -:  694:
+        3:  695:        if (choice2 > 2 || choice2 < 0)
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+        -:  696:        {
+        2:  697:            return -1;
+        -:  698:        }
+        -:  699:
+        1:  700:        if (choice1 == handPos)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  701:        {
+    #####:  702:            return -1;
+        -:  703:        }
+        -:  704:
+        6:  705:        for (int i = 0; i < state->handCount[currentPlayer]; i++)
+branch  0 taken 83%
+branch  1 taken 17% (fallthrough)
+        -:  706:        {
+        5:  707:            if (i != handPos && i == state->hand[currentPlayer][choice1] && i != choice1)
+branch  0 taken 80% (fallthrough)
+branch  1 taken 20%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+branch  4 never executed
+branch  5 never executed
+        -:  708:            {
+    #####:  709:                j++;
+        -:  710:            }
+        -:  711:        }
+        1:  712:        if (j < choice2)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  713:        {
+        1:  714:            return -1;
+        -:  715:        }
+        -:  716:
+        -:  717:        if (DEBUG)
+        -:  718:            printf("Player %d reveals card number: %d\n", currentPlayer, state->hand[currentPlayer][choice1]);
+        -:  719:
+        -:  720:        //increase supply count for choosen card by amount being discarded
+    #####:  721:        state->supplyCount[state->hand[currentPlayer][choice1]] += choice2;
+        -:  722:
+        -:  723:        //each other player gains a copy of revealed card
+    #####:  724:        for (int i = 0; i < state->numPlayers; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  725:        {
+    #####:  726:            if (i != currentPlayer)
+branch  0 never executed
+branch  1 never executed
+        -:  727:            {
+    #####:  728:                gainCard(state->hand[currentPlayer][choice1], state, 0, i);
+call    0 never executed
+        -:  729:            }
+        -:  730:        }
+        -:  731:
+        -:  732:        //discard played card from hand
+    #####:  733:        discardCard(handPos, currentPlayer, state, 0);
+call    0 never executed
+        -:  734:
+        -:  735:        //trash copies of cards returned to supply
+    #####:  736:        for (j = 0; j < choice2; j++)
+branch  0 never executed
+branch  1 never executed
+        -:  737:        {
+    #####:  738:            for (int i = 0; i < state->handCount[currentPlayer]; i++)
+branch  0 never executed
+branch  1 never executed
+        -:  739:            {
+    #####:  740:                if (state->hand[currentPlayer][i] == state->hand[currentPlayer][choice1])
+branch  0 never executed
+branch  1 never executed
+        -:  741:                {
+    #####:  742:                    discardCard(i, currentPlayer, state, 1);
+call    0 never executed
+    #####:  743:                    break;
+        -:  744:                }
+        -:  745:            }
+        -:  746:        }
+        -:  747:
+    #####:  748:        return 0;
+        -:  749:
+        -:  750:}
+        -:  751:
+        -:  752://The baronEffect function runs the effect of the baron card when played
+function baronEffect called 55 returned 100% blocks executed 93%
+       55:  753:int baronEffect(struct gameState *state, int choice1, int currentPlayer)
+        -:  754:{
+       55:  755:    addBuys(state, 1);//Increase buys by 1!
+call    0 returned 100%
+        -:  756:
+       55:  757:    if (choice1 > 0) { //Boolean true or going to discard an estate
+branch  0 taken 36% (fallthrough)
+branch  1 taken 64%
+       20:  758:           int p = 0;//Iterator for hand!
+       20:  759:           int card_not_discarded = 1;//Flag for discard set!
+      117:  760:           while(card_not_discarded) {
+branch  0 taken 79%
+branch  1 taken 21% (fallthrough)
+       77:  761:                if (state->hand[currentPlayer][p] == estate) { //Found an estate card!
+branch  0 taken 23% (fallthrough)
+branch  1 taken 77%
+       18:  762:                    state->coins += 4;//Add 4 coins to the amount of coins
+       18:  763:                    state->discard[currentPlayer][state->discardCount[currentPlayer]] = state->hand[currentPlayer][p];
+       18:  764:                    state->discardCount[currentPlayer]++;
+       50:  765:                    for (; p < state->handCount[currentPlayer]; p++) {
+branch  0 taken 64%
+branch  1 taken 36% (fallthrough)
+       32:  766:                        state->hand[currentPlayer][p] = state->hand[currentPlayer][p+1];
+        -:  767:                    }
+       18:  768:                    state->hand[currentPlayer][state->handCount[currentPlayer]] = -1;
+       18:  769:                    state->handCount[currentPlayer]--;
+        -:  770:                   // card_not_discarded = 0;//Exit the loop
+        -:  771:                }
+       59:  772:                else if (p > state->handCount[currentPlayer]) {
+branch  0 taken 34% (fallthrough)
+branch  1 taken 66%
+        -:  773:                    if(DEBUG) {
+        -:  774:                        printf("No estate cards in your hand, invalid choice\n");
+        -:  775:                        printf("Must gain an estate if there are any\n");
+        -:  776:                    }
+       20:  777:                    if (supplyCount(estate, state) > 0) {
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0%
+       20:  778:                        gainCard(estate, state, 0, currentPlayer);
+call    0 returned 100%
+        -:  779:
+        -:  780:                       // state->supplyCount[estate]--;//Decrement estates
+       20:  781:                        if (supplyCount(estate, state) == 0) {
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+    #####:  782:                            isGameOver(state);
+call    0 never executed
+        -:  783:                        }
+        -:  784:                    }
+       20:  785:                    card_not_discarded = 0;//Exit the loop
+        -:  786:                }
+        -:  787:
+        -:  788:                else {
+       39:  789:                    p++;//Next card
+        -:  790:                }
+        -:  791:            }
+        -:  792:        }
+        -:  793:
+        -:  794:        else {
+       35:  795:            if (supplyCount(estate, state) > 0) {
+call    0 returned 100%
+branch  1 taken 97% (fallthrough)
+branch  2 taken 3%
+       34:  796:                gainCard(estate, state, 0, currentPlayer);//Gain an estate
+call    0 returned 100%
+        -:  797:
+       34:  798:                state->supplyCount[estate]--;//Decrement Estates
+       34:  799:                if (supplyCount(estate, state) == 0) {
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+    #####:  800:                    isGameOver(state);
+call    0 never executed
+        -:  801:                }
+        -:  802:            }
+        -:  803:        }
+        -:  804:
+        -:  805:
+       55:  806:        return 0;
+        -:  807:
+        -:  808:}
+        -:  809:
+        -:  810://minionEffect implements the minion effects when that card is played
+function minionEffect called 255 returned 100% blocks executed 100%
+      255:  811:int minionEffect(struct gameState* state, int choice1, int choice2, int handPos, int currentPlayer) {
+        -:  812:    //+1 action
+      255:  813:    addActions(state, 1);
+call    0 returned 100%
+        -:  814:
+        -:  815:        //discard card from hand
+      255:  816:        discardCard(handPos, currentPlayer, state, 0);
+call    0 returned 100%
+        -:  817:
+      255:  818:    if (choice1){
+branch  0 taken 53% (fallthrough)
+branch  1 taken 47%
+      136:  819:            state->coins = state->coins + 2;
+        -:  820:        }
+      119:  821:        else if (choice2)       //discard hand, redraw 4, other players with 5+ cards discard hand and draw 4
+branch  0 taken 99% (fallthrough)
+branch  1 taken 1%
+        -:  822:        {
+        -:  823:            //discard hand
+      685:  824:            while(numHandCards(state) > 0)
+call    0 returned 100%
+branch  1 taken 79%
+branch  2 taken 21% (fallthrough)
+        -:  825:            {
+      449:  826:                discardCard(handPos, currentPlayer, state, 0);
+call    0 returned 100%
+        -:  827:            }
+        -:  828:
+        -:  829:            //draw 4
+      590:  830:            for (int i = 0; i < 4; i++)
+branch  0 taken 80%
+branch  1 taken 20% (fallthrough)
+        -:  831:            {
+      472:  832:                drawCard(currentPlayer, state);
+call    0 returned 100%
+        -:  833:            }
+        -:  834:
+        -:  835:            //other players discard hand and redraw if hand size > 4
+      484:  836:            for (int i = 0; i < state->numPlayers; i++)
+branch  0 taken 76%
+branch  1 taken 24% (fallthrough)
+        -:  837:            {
+      366:  838:                if (i != currentPlayer)
+branch  0 taken 68% (fallthrough)
+branch  1 taken 32%
+        -:  839:                {
+      248:  840:                    if ( state->handCount[i] > 4 )
+branch  0 taken 4% (fallthrough)
+branch  1 taken 96%
+        -:  841:                    {
+        -:  842:                        //discard hand
+       68:  843:                        while( state->handCount[i] > 0 )
+branch  0 taken 85%
+branch  1 taken 15% (fallthrough)
+        -:  844:                        {
+       50:  845:                            discardCard(handPos, i, state, 0);
+call    0 returned 100%
+        -:  846:                        }
+        -:  847:
+        -:  848:                        //draw 4
+       45:  849:                        for (int j = 0; j < 4; j++)
+branch  0 taken 80%
+branch  1 taken 20% (fallthrough)
+        -:  850:                        {
+       36:  851:                            drawCard(i, state);
+call    0 returned 100%
+        -:  852:                        }
+        -:  853:                    }
+        -:  854:                }
+        -:  855:            }
+        -:  856:
+        -:  857:        }
+      255:  858:        return 0;   
+        -:  859:}
+        -:  860:
+        -:  861://the tributeEffect function implements the effects of the tribute card
+function tributeEffect called 81 returned 100% blocks executed 57%
+       81:  862:int tributeEffect(struct gameState * state, int currentPlayer, int nextPlayer) {
+       81:  863:    int tributeRevealedCards[2] = {-1,-1};
+       81:  864:    if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) <= 1) {
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  865:            if (state->deckCount[nextPlayer] > 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  866:                tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+    #####:  867:                state->deckCount[nextPlayer]--;
+        -:  868:            }
+    #####:  869:            else if (state->discardCount[nextPlayer] > 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  870:                tributeRevealedCards[0] = state->discard[nextPlayer][state->discardCount[nextPlayer]-1];
+    #####:  871:                state->discardCount[nextPlayer]--;
+        -:  872:            }
+        -:  873:            else {
+        -:  874:                //No Card to Reveal
+        -:  875:                if (DEBUG) {
+        -:  876:                    printf("No cards to reveal\n");
+        -:  877:                }
+        -:  878:            }
+        -:  879:        }
+        -:  880:
+        -:  881:        else {
+       81:  882:            if (state->deckCount[nextPlayer] == 0) {
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  883:                for (int i = 0; i < state->discardCount[nextPlayer]; i++) {
+branch  0 never executed
+branch  1 never executed
+    #####:  884:                    state->deck[nextPlayer][i] = state->discard[nextPlayer][i];//Move to deck
+    #####:  885:                    state->deckCount[nextPlayer]++;
+    #####:  886:                    state->discard[nextPlayer][i] = -1;
+    #####:  887:                    state->discardCount[nextPlayer]--;
+        -:  888:                }
+        -:  889:
+    #####:  890:                shuffle(nextPlayer,state);//Shuffle the deck
+call    0 never executed
+        -:  891:            }
+       81:  892:            tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+       81:  893:            state->deck[nextPlayer][state->deckCount[nextPlayer]--] = -1;
+       81:  894:            state->deckCount[nextPlayer]--;
+       81:  895:            tributeRevealedCards[1] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+       81:  896:            state->deck[nextPlayer][state->deckCount[nextPlayer]--] = -1;
+       81:  897:            state->deckCount[nextPlayer]--;
+        -:  898:        }
+        -:  899:
+       81:  900:        if (tributeRevealedCards[0] == tributeRevealedCards[1]) { //If we have a duplicate card, just drop one
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  901:            state->playedCards[state->playedCardCount] = tributeRevealedCards[1];
+    #####:  902:            state->playedCardCount++;
+    #####:  903:            tributeRevealedCards[1] = -1;
+        -:  904:        }
+        -:  905:
+      324:  906:        for (int i = 0; i <= 2; i ++) {
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+      243:  907:            if (tributeRevealedCards[i] == copper || tributeRevealedCards[i] == silver || tributeRevealedCards[i] == gold) { //Treasure cards
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+       81:  908:                state->coins += 2;
+        -:  909:            }
+        -:  910:
+      162:  911:            else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == province || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall) { //Victory Card Found
+branch  0 taken 50% (fallthrough)
+branch  1 taken 50%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+branch  9 never executed
+      162:  912:                drawCard(currentPlayer, state);
+call    0 returned 100%
+      162:  913:                drawCard(currentPlayer, state);
+call    0 returned 100%
+        -:  914:            }
+        -:  915:            else { //Action Card
+    #####:  916:        addActions(state, 2);
+call    0 never executed
+        -:  917:            }
+        -:  918:        }
+        -:  919:
+       81:  920:        return 0;
+        -:  921:}
+        -:  922:
+        -:  923://mineEffect implements the effects of the mine card
+function mineEffect called 5 returned 100% blocks executed 95%
+        5:  924:int mineEffect(struct gameState *state, int currentPlayer, int choice1, int choice2, int handPos) {
+        5:  925:        int j = state->hand[currentPlayer][choice1];  //store card we will trash
+        -:  926:
+        5:  927:        if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
+branch  0 taken 40% (fallthrough)
+branch  1 taken 60%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+        -:  928:        {
+        3:  929:            return -1;
+        -:  930:        }
+        -:  931:
+        2:  932:        if (choice2 > treasure_map || choice2 < curse)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+        -:  933:        {
+    #####:  934:            return -1;
+        -:  935:        }
+        -:  936:
+        2:  937:        if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) ){
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 50% (fallthrough)
+branch  3 taken 50%
+        1:  938:            return -1;
+        -:  939:        }
+        -:  940:
+        1:  941:        gainCard(choice2, state, 2, currentPlayer);
+call    0 returned 100%
+        -:  942:
+        -:  943:        //discard card from hand
+        1:  944:        discardCard(handPos, currentPlayer, state, 0);
+call    0 returned 100%
+        -:  945:
+        -:  946:        //discard trashed card
+        2:  947:        for (int i = 0; i < state->handCount[currentPlayer]; i++) {
+branch  0 taken 100%
+branch  1 taken 0% (fallthrough)
+        2:  948:            if (state->hand[currentPlayer][i] == j)
+branch  0 taken 50% (fallthrough)
+branch  1 taken 50%
+        -:  949:            {
+        1:  950:                discardCard(i, currentPlayer, state, 0);
+call    0 returned 100%
+        1:  951:                break;
+        -:  952:            }
+        -:  953:        }
+        -:  954:
+        1:  955:        return 0;
+        -:  956:}
+        -:  957:
+function cardEffect called 0 returned 0% blocks executed 0%
+    #####:  958:int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus) {
+        -:  959:    int i;
+        -:  960:    int j;
+        -:  961:    int k;
+        -:  962:    int x;
+        -:  963:    int index;
+    #####:  964:    int currentPlayer = whoseTurn(state);
+call    0 never executed
+    #####:  965:    int nextPlayer = currentPlayer + 1;
+        -:  966:
+        -:  967:   // int tributeRevealedCards[2] = {-1, -1};
+        -:  968:    int temphand[MAX_HAND];// moved above the if statement
+    #####:  969:    int drawntreasure=0;
+        -:  970:    int cardDrawn;
+    #####:  971:    int z = 0;// this is the counter for the temp hand
+    #####:  972:    if (nextPlayer > (state->numPlayers - 1)) {
+branch  0 never executed
+branch  1 never executed
+    #####:  973:        nextPlayer = 0;
+        -:  974:    }
+        -:  975:
+        -:  976:
+        -:  977:    //uses switch to select card and perform actions
+    #####:  978:    switch( card )
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+branch  9 never executed
+branch 10 never executed
+branch 11 never executed
+branch 12 never executed
+branch 13 never executed
+branch 14 never executed
+branch 15 never executed
+branch 16 never executed
+branch 17 never executed
+branch 18 never executed
+branch 19 never executed
+branch 20 never executed
+        -:  979:    {
+        -:  980:    case adventurer:
+    #####:  981:        while(drawntreasure<2) {
+branch  0 never executed
+branch  1 never executed
+    #####:  982:            if (state->deckCount[currentPlayer] <1) { //if the deck is empty we need to shuffle discard and add to deck
+branch  0 never executed
+branch  1 never executed
+    #####:  983:                shuffle(currentPlayer, state);
+call    0 never executed
+        -:  984:            }
+    #####:  985:            drawCard(currentPlayer, state);
+call    0 never executed
+    #####:  986:            cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+    #####:  987:            if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:  988:                drawntreasure++;
+        -:  989:            else {
+    #####:  990:                temphand[z]=cardDrawn;
+    #####:  991:                state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+    #####:  992:                z++;
+        -:  993:            }
+        -:  994:        }
+    #####:  995:        while(z-1>=0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  996:            state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
+    #####:  997:            z=z-1;
+        -:  998:        }
+    #####:  999:        return 0;
+        -: 1000:
+        -: 1001:    case council_room:
+        -: 1002:        //+4 Cards
+    #####: 1003:        for (i = 0; i < 4; i++) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1004:            drawCard(currentPlayer, state);
+call    0 never executed
+        -: 1005:        }
+        -: 1006:
+        -: 1007:        //+1 Buy
+    #####: 1008:    addBuys(state, 1);
+call    0 never executed
+        -: 1009:
+        -: 1010:        //Each other player draws a card
+    #####: 1011:        for (i = 0; i < state->numPlayers; i++) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1012:            if ( i != currentPlayer ) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1013:                drawCard(i, state);
+call    0 never executed
+        -: 1014:            }
+        -: 1015:        }
+        -: 1016:
+        -: 1017:        //put played card in played card pile
+    #####: 1018:        discardCard(handPos, currentPlayer, state, 0);
+call    0 never executed
+        -: 1019:
+    #####: 1020:        return 0;
+        -: 1021:
+        -: 1022:    case feast:
+        -: 1023:        //gain card with cost up to 5
+        -: 1024:        //Backup hand
+    #####: 1025:        for (i = 0; i <= state->handCount[currentPlayer]; i++) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1026:            temphand[i] = state->hand[currentPlayer][i];//Backup card
+    #####: 1027:            state->hand[currentPlayer][i] = -1;//Set to nothing
+        -: 1028:        }
+        -: 1029:        //Backup hand
+        -: 1030:
+        -: 1031:        //Update Coins for Buy
+    #####: 1032:        updateCoins(currentPlayer, state, 5);
+call    0 never executed
+    #####: 1033:        x = 1;//Condition to loop on
+    #####: 1034:        while( x == 1) {//Buy one card
+branch  0 never executed
+branch  1 never executed
+    #####: 1035:            if (supplyCount(choice1, state) <= 0) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -: 1036:                if (DEBUG)
+        -: 1037:                    printf("None of that card left, sorry!\n");
+        -: 1038:
+        -: 1039:                if (DEBUG) {
+        -: 1040:                    printf("Cards Left: %d\n", supplyCount(choice1, state));
+        -: 1041:                }
+        -: 1042:            }
+    #####: 1043:            else if (state->coins < getCost(choice1)) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####: 1044:                printf("That card is too expensive!\n");
+call    0 never executed
+        -: 1045:
+        -: 1046:                if (DEBUG) {
+        -: 1047:                    printf("Coins: %d < %d\n", state->coins, getCost(choice1));
+        -: 1048:                }
+        -: 1049:            }
+        -: 1050:            else {
+        -: 1051:
+        -: 1052:                if (DEBUG) {
+        -: 1053:                    printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
+        -: 1054:                }
+        -: 1055:
+    #####: 1056:                gainCard(choice1, state, 0, currentPlayer);//Gain the card
+call    0 never executed
+    #####: 1057:                x = 0;//No more buying cards
+        -: 1058:
+        -: 1059:                if (DEBUG) {
+        -: 1060:                    printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
+        -: 1061:                }
+        -: 1062:
+        -: 1063:            }
+        -: 1064:        }
+        -: 1065:
+        -: 1066:        //Reset Hand
+    #####: 1067:        for (i = 0; i <= state->handCount[currentPlayer]; i++) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1068:            state->hand[currentPlayer][i] = temphand[i];
+    #####: 1069:            temphand[i] = -1;
+        -: 1070:        }
+        -: 1071:        //Reset Hand
+        -: 1072:
+    #####: 1073:        return 0;
+        -: 1074:
+        -: 1075:    case gardens:
+    #####: 1076:        return -1;
+        -: 1077:
+        -: 1078:    case mine:
+    #####: 1079:        return mineEffect(state, currentPlayer, choice1, choice2, handPos);
+call    0 never executed
+        -: 1080:
+        -: 1081:    case remodel:
+    #####: 1082:        j = state->hand[currentPlayer][choice1];  //store card we will trash
+        -: 1083:
+    #####: 1084:        if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+        -: 1085:        {
+    #####: 1086:            return -1;
+        -: 1087:        }
+        -: 1088:
+    #####: 1089:        gainCard(choice2, state, 0, currentPlayer);
+call    0 never executed
+        -: 1090:
+        -: 1091:        //discard card from hand
+    #####: 1092:        discardCard(handPos, currentPlayer, state, 0);
+call    0 never executed
+        -: 1093:
+        -: 1094:        //discard trashed card
+    #####: 1095:        for (i = 0; i < state->handCount[currentPlayer]; i++)
+branch  0 never executed
+branch  1 never executed
+        -: 1096:        {
+    #####: 1097:            if (state->hand[currentPlayer][i] == j)
+branch  0 never executed
+branch  1 never executed
+        -: 1098:            {
+    #####: 1099:                discardCard(i, currentPlayer, state, 0);
+call    0 never executed
+    #####: 1100:                break;
+        -: 1101:            }
+        -: 1102:        }
+        -: 1103:
+        -: 1104:
+    #####: 1105:        return 0;
+        -: 1106:
+        -: 1107:    case smithy:
+        -: 1108:        //+3 Cards
+    #####: 1109:        for (i = 0; i < 3; i++)
+branch  0 never executed
+branch  1 never executed
+        -: 1110:        {
+    #####: 1111:            drawCard(currentPlayer, state);
+call    0 never executed
+        -: 1112:        }
+        -: 1113:
+        -: 1114:        //discard card from hand
+    #####: 1115:        discardCard(handPos, currentPlayer, state, 0);
+call    0 never executed
+    #####: 1116:        return 0;
+        -: 1117:
+        -: 1118:    case village:
+        -: 1119:        //+1 Card
+    #####: 1120:        drawCard(currentPlayer, state);
+call    0 never executed
+        -: 1121:
+        -: 1122:        //+2 Actions
+    #####: 1123:        state->numActions = state->numActions + 2;
+        -: 1124:
+        -: 1125:        //discard played card from hand
+    #####: 1126:        discardCard(handPos, currentPlayer, state, 0);
+call    0 never executed
+    #####: 1127:        return 0;
+        -: 1128:
+        -: 1129:    case baron:
+    #####: 1130:        return baronEffect(state, choice1, currentPlayer);
+call    0 never executed
+        -: 1131:
+        -: 1132:    case great_hall:
+        -: 1133:        //+1 Card
+    #####: 1134:        drawCard(currentPlayer, state);
+call    0 never executed
+        -: 1135:
+        -: 1136:        //+1 Actions
+    #####: 1137:        state->numActions++;
+        -: 1138:
+        -: 1139:        //discard card from hand
+    #####: 1140:        discardCard(handPos, currentPlayer, state, 0);
+call    0 never executed
+    #####: 1141:        return 0;
+        -: 1142:
+        -: 1143:    case minion:
+    #####: 1144:        return minionEffect(state, choice1, choice2, handPos, currentPlayer);
+call    0 never executed
+        -: 1145:
+        -: 1146:    case steward:
+    #####: 1147:        if (choice1 == 1)
+branch  0 never executed
+branch  1 never executed
+        -: 1148:        {
+        -: 1149:            //+2 cards
+    #####: 1150:            drawCard(currentPlayer, state);
+call    0 never executed
+    #####: 1151:            drawCard(currentPlayer, state);
+call    0 never executed
+        -: 1152:        }
+    #####: 1153:        else if (choice1 == 2)
+branch  0 never executed
+branch  1 never executed
+        -: 1154:        {
+        -: 1155:            //+2 coins
+    #####: 1156:            state->coins = state->coins + 2;
+        -: 1157:        }
+        -: 1158:        else
+        -: 1159:        {
+        -: 1160:            //trash 2 cards in hand
+    #####: 1161:            discardCard(choice2, currentPlayer, state, 1);
+call    0 never executed
+    #####: 1162:            discardCard(choice3, currentPlayer, state, 1);
+call    0 never executed
+        -: 1163:        }
+        -: 1164:
+        -: 1165:        //discard card from hand
+    #####: 1166:        discardCard(handPos, currentPlayer, state, 0);
+call    0 never executed
+    #####: 1167:        return 0;
+        -: 1168:
+        -: 1169:    case tribute:
+    #####: 1170:        return tributeEffect(state, currentPlayer, nextPlayer);
+call    0 never executed
+        -: 1171:
+        -: 1172:    case ambassador:
+    #####: 1173:        j = 0;      //used to check if player has enough cards to discard
+        -: 1174:
+    #####: 1175:        if (choice2 > 2 || choice2 < 0)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -: 1176:        {
+    #####: 1177:            return -1;
+        -: 1178:        }
+        -: 1179:
+    #####: 1180:        if (choice1 == handPos)
+branch  0 never executed
+branch  1 never executed
+        -: 1181:        {
+    #####: 1182:            return -1;
+        -: 1183:        }
+        -: 1184:
+    #####: 1185:        for (i = 0; i < state->handCount[currentPlayer]; i++)
+branch  0 never executed
+branch  1 never executed
+        -: 1186:        {
+    #####: 1187:            if (i != handPos && i == state->hand[currentPlayer][choice1] && i != choice1)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+        -: 1188:            {
+    #####: 1189:                j++;
+        -: 1190:            }
+        -: 1191:        }
+    #####: 1192:        if (j < choice2)
+branch  0 never executed
+branch  1 never executed
+        -: 1193:        {
+    #####: 1194:            return -1;
+        -: 1195:        }
+        -: 1196:
+        -: 1197:        if (DEBUG)
+        -: 1198:            printf("Player %d reveals card number: %d\n", currentPlayer, state->hand[currentPlayer][choice1]);
+        -: 1199:
+        -: 1200:        //increase supply count for choosen card by amount being discarded
+    #####: 1201:        state->supplyCount[state->hand[currentPlayer][choice1]] += choice2;
+        -: 1202:
+        -: 1203:        //each other player gains a copy of revealed card
+    #####: 1204:        for (i = 0; i < state->numPlayers; i++)
+branch  0 never executed
+branch  1 never executed
+        -: 1205:        {
+    #####: 1206:            if (i != currentPlayer)
+branch  0 never executed
+branch  1 never executed
+        -: 1207:            {
+    #####: 1208:                gainCard(state->hand[currentPlayer][choice1], state, 0, i);
+call    0 never executed
+        -: 1209:            }
+        -: 1210:        }
+        -: 1211:
+        -: 1212:        //discard played card from hand
+    #####: 1213:        discardCard(handPos, currentPlayer, state, 0);
+call    0 never executed
+        -: 1214:
+        -: 1215:        //trash copies of cards returned to supply
+    #####: 1216:        for (j = 0; j < choice2; j++)
+branch  0 never executed
+branch  1 never executed
+        -: 1217:        {
+    #####: 1218:            for (i = 0; i < state->handCount[currentPlayer]; i++)
+branch  0 never executed
+branch  1 never executed
+        -: 1219:            {
+    #####: 1220:                if (state->hand[currentPlayer][i] == state->hand[currentPlayer][choice1])
+branch  0 never executed
+branch  1 never executed
+        -: 1221:                {
+    #####: 1222:                    discardCard(i, currentPlayer, state, 1);
+call    0 never executed
+    #####: 1223:                    break;
+        -: 1224:                }
+        -: 1225:            }
+        -: 1226:        }
+        -: 1227:
+    #####: 1228:        return 0;
+        -: 1229:
+        -: 1230:    case cutpurse:
+        -: 1231:
+    #####: 1232:        updateCoins(currentPlayer, state, 2);
+call    0 never executed
+    #####: 1233:        for (i = 0; i < state->numPlayers; i++)
+branch  0 never executed
+branch  1 never executed
+        -: 1234:        {
+    #####: 1235:            if (i != currentPlayer)
+branch  0 never executed
+branch  1 never executed
+        -: 1236:            {
+    #####: 1237:                for (j = 0; j < state->handCount[i]; j++)
+branch  0 never executed
+branch  1 never executed
+        -: 1238:                {
+    #####: 1239:                    if (state->hand[i][j] == copper)
+branch  0 never executed
+branch  1 never executed
+        -: 1240:                    {
+    #####: 1241:                        discardCard(j, i, state, 0);
+call    0 never executed
+    #####: 1242:                        break;
+        -: 1243:                    }
+    #####: 1244:                    if (j == state->handCount[i])
+branch  0 never executed
+branch  1 never executed
+        -: 1245:                    {
+    #####: 1246:                        for (k = 0; k < state->handCount[i]; k++)
+branch  0 never executed
+branch  1 never executed
+        -: 1247:                        {
+        -: 1248:                            if (DEBUG)
+        -: 1249:                                printf("Player %d reveals card number %d\n", i, state->hand[i][k]);
+        -: 1250:                        }
+    #####: 1251:                        break;
+        -: 1252:                    }
+        -: 1253:                }
+        -: 1254:
+        -: 1255:            }
+        -: 1256:
+        -: 1257:        }
+        -: 1258:
+        -: 1259:        //discard played card from hand
+    #####: 1260:        discardCard(handPos, currentPlayer, state, 0);
+call    0 never executed
+        -: 1261:
+    #####: 1262:        return 0;
+        -: 1263:
+        -: 1264:
+        -: 1265:    case embargo:
+        -: 1266:        //+2 Coins
+    #####: 1267:        state->coins = state->coins + 2;
+        -: 1268:
+        -: 1269:        //see if selected pile is in play
+    #####: 1270:        if ( state->supplyCount[choice1] == -1 )
+branch  0 never executed
+branch  1 never executed
+        -: 1271:        {
+    #####: 1272:            return -1;
+        -: 1273:        }
+        -: 1274:
+        -: 1275:        //add embargo token to selected supply pile
+    #####: 1276:        state->embargoTokens[choice1]++;
+        -: 1277:
+        -: 1278:        //trash card
+    #####: 1279:        discardCard(handPos, currentPlayer, state, 1);
+call    0 never executed
+    #####: 1280:        return 0;
+        -: 1281:
+        -: 1282:    case outpost:
+        -: 1283:        //set outpost flag
+    #####: 1284:        state->outpostPlayed++;
+        -: 1285:
+        -: 1286:        //discard card
+    #####: 1287:        discardCard(handPos, currentPlayer, state, 0);
+call    0 never executed
+    #####: 1288:        return 0;
+        -: 1289:
+        -: 1290:    case salvager:
+        -: 1291:        //+1 buy
+    #####: 1292:        state->numBuys++;
+        -: 1293:
+    #####: 1294:        if (choice1)
+branch  0 never executed
+branch  1 never executed
+        -: 1295:        {
+        -: 1296:            //gain coins equal to trashed card
+    #####: 1297:            state->coins = state->coins + getCost( handCard(choice1, state) );
+call    0 never executed
+call    1 never executed
+        -: 1298:            //trash card
+    #####: 1299:            discardCard(choice1, currentPlayer, state, 1);
+call    0 never executed
+        -: 1300:        }
+        -: 1301:
+        -: 1302:        //discard card
+    #####: 1303:        discardCard(handPos, currentPlayer, state, 0);
+call    0 never executed
+    #####: 1304:        return 0;
+        -: 1305:
+        -: 1306:    case sea_hag:
+    #####: 1307:        for (i = 0; i < state->numPlayers; i++) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1308:            if (i != currentPlayer) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1309:                state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--];
+    #####: 1310:                state->deckCount[i]--;
+    #####: 1311:                state->discardCount[i]++;
+    #####: 1312:                state->deck[i][state->deckCount[i]--] = curse;//Top card now a curse
+        -: 1313:            }
+        -: 1314:        }
+    #####: 1315:        return 0;
+        -: 1316:
+        -: 1317:    case treasure_map:
+        -: 1318:        //search hand for another treasure_map
+    #####: 1319:        index = -1;
+    #####: 1320:        for (i = 0; i < state->handCount[currentPlayer]; i++)
+branch  0 never executed
+branch  1 never executed
+        -: 1321:        {
+    #####: 1322:            if (state->hand[currentPlayer][i] == treasure_map && i != handPos)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -: 1323:            {
+    #####: 1324:                index = i;
+    #####: 1325:                break;
+        -: 1326:            }
+        -: 1327:        }
+    #####: 1328:        if (index > -1)
+branch  0 never executed
+branch  1 never executed
+        -: 1329:        {
+        -: 1330:            //trash both treasure cards
+    #####: 1331:            discardCard(handPos, currentPlayer, state, 1);
+call    0 never executed
+    #####: 1332:            discardCard(index, currentPlayer, state, 1);
+call    0 never executed
+        -: 1333:
+        -: 1334:            //gain 4 Gold cards
+    #####: 1335:            for (i = 0; i < 4; i++)
+branch  0 never executed
+branch  1 never executed
+        -: 1336:            {
+    #####: 1337:                gainCard(gold, state, 1, currentPlayer);
+call    0 never executed
+        -: 1338:            }
+        -: 1339:
+        -: 1340:            //return success
+    #####: 1341:            return 1;
+        -: 1342:        }
+        -: 1343:
+        -: 1344:        //no second treasure_map found in hand
+    #####: 1345:        return -1;
+        -: 1346:    }
+        -: 1347:
+    #####: 1348:    return -1;
+        -: 1349:}
+        -: 1350:
+function discardCard called 756 returned 100% blocks executed 89%
+      756: 1351:int discardCard(int handPos, int currentPlayer, struct gameState *state, int trashFlag)
+        -: 1352:{
+        -: 1353:
+        -: 1354:    //if card is not trashed, added to Played pile
+      756: 1355:    if (trashFlag < 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -: 1356:    {
+        -: 1357:        //add card to played pile
+      756: 1358:        state->playedCards[state->playedCardCount] = state->hand[currentPlayer][handPos];
+      756: 1359:        state->playedCardCount++;
+        -: 1360:    }
+        -: 1361:
+        -: 1362:    //set played card to -1
+      756: 1363:    state->hand[currentPlayer][handPos] = -1;
+        -: 1364:
+        -: 1365:    //remove card from player's hand
+      756: 1366:    if ( handPos == (state->handCount[currentPlayer] - 1) )     //last card in hand array is played
+branch  0 taken 17% (fallthrough)
+branch  1 taken 83%
+        -: 1367:    {
+        -: 1368:        //reduce number of cards in hand
+      127: 1369:        state->handCount[currentPlayer]--;
+        -: 1370:    }
+      629: 1371:    else if ( state->handCount[currentPlayer] == 1 ) //only one card in hand
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -: 1372:    {
+        -: 1373:        //reduce number of cards in hand
+    #####: 1374:        state->handCount[currentPlayer]--;
+        -: 1375:    }
+        -: 1376:    else
+        -: 1377:    {
+        -: 1378:        //replace discarded card with last card in hand
+      629: 1379:        state->hand[currentPlayer][handPos] = state->hand[currentPlayer][ (state->handCount[currentPlayer] - 1)];
+        -: 1380:        //set last card to -1
+      629: 1381:        state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = -1;
+        -: 1382:        //reduce number of cards in hand
+      629: 1383:        state->handCount[currentPlayer]--;
+        -: 1384:    }
+        -: 1385:
+      756: 1386:    return 0;
+        -: 1387:}
+        -: 1388:
+function gainCard called 55 returned 100% blocks executed 80%
+       55: 1389:int gainCard(int supplyPos, struct gameState *state, int toFlag, int player)
+        -: 1390:{
+        -: 1391:    //Note: supplyPos is enum of choosen card
+        -: 1392:
+        -: 1393:    //check if supply pile is empty (0) or card is not used in game (-1)
+       55: 1394:    if ( supplyCount(supplyPos, state) < 1 )
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+        -: 1395:    {
+    #####: 1396:        return -1;
+        -: 1397:    }
+        -: 1398:
+        -: 1399:    //added card for [whoseTurn] current player:
+        -: 1400:    // toFlag = 0 : add to discard
+        -: 1401:    // toFlag = 1 : add to deck
+        -: 1402:    // toFlag = 2 : add to hand
+        -: 1403:
+       55: 1404:    if (toFlag == 1)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -: 1405:    {
+    #####: 1406:        state->deck[ player ][ state->deckCount[player] ] = supplyPos;
+    #####: 1407:        state->deckCount[player]++;
+        -: 1408:    }
+       55: 1409:    else if (toFlag == 2)
+branch  0 taken 2% (fallthrough)
+branch  1 taken 98%
+        -: 1410:    {
+        1: 1411:        state->hand[ player ][ state->handCount[player] ] = supplyPos;
+        1: 1412:        state->handCount[player]++;
+        -: 1413:    }
+        -: 1414:    else
+        -: 1415:    {
+       54: 1416:        state->discard[player][ state->discardCount[player] ] = supplyPos;
+       54: 1417:        state->discardCount[player]++;
+        -: 1418:    }
+        -: 1419:
+        -: 1420:    //decrease number in supply pile
+       55: 1421:    state->supplyCount[supplyPos]--;
+        -: 1422:
+       55: 1423:    return 0;
+        -: 1424:}
+        -: 1425:
+function updateCoins called 206 returned 100% blocks executed 82%
+      206: 1426:int updateCoins(int player, struct gameState *state, int bonus)
+        -: 1427:{
+        -: 1428:    int i;
+        -: 1429:
+        -: 1430:    //reset coin count
+      206: 1431:    state->coins = 0;
+        -: 1432:
+        -: 1433:    //add coins for each Treasure card in player's hand
+     1236: 1434:    for (i = 0; i < state->handCount[player]; i++)
+branch  0 taken 83%
+branch  1 taken 17% (fallthrough)
+        -: 1435:    {
+     1030: 1436:        if (state->hand[player][i] == copper)
+branch  0 taken 80% (fallthrough)
+branch  1 taken 20%
+        -: 1437:        {
+      824: 1438:            state->coins += 1;
+        -: 1439:        }
+      206: 1440:        else if (state->hand[player][i] == silver)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -: 1441:        {
+    #####: 1442:            state->coins += 2;
+        -: 1443:        }
+      206: 1444:        else if (state->hand[player][i] == gold)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -: 1445:        {
+    #####: 1446:            state->coins += 3;
+        -: 1447:        }
+        -: 1448:    }
+        -: 1449:
+        -: 1450:    //add bonus
+      206: 1451:    state->coins += bonus;
+        -: 1452:
+      206: 1453:    return 0;
+        -: 1454:}
+        -: 1455:
+        -: 1456:
+        -: 1457://end of dominion.c
